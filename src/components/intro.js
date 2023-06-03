@@ -54,9 +54,10 @@ const Intro = () => {
 
         <div
           id="pContainer"
-          className="mt-[20px] flex justify-start border- w-[100%]"
+          className="mt-[20px] flex flex-col justify-start w-[100%]"
         >
-          <p className="text-white">
+        <p className="text-white font-mono text-md"> Hi, I'm Sifeng Chen</p>
+          <p className="mt-[12px] text-white font-mono text-sm">
             I{" "}
             <Typical
               steps={[

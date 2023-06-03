@@ -15,13 +15,7 @@ export default function Home() {
         id="indexContainer"
         className="flex flex-col flex-grow items-center"
       >
-        <section id="introContainer">
-          <Intro />
-        </section>
-
-        <div id="aboutContainer">
-          <About />
-        </div>
+        <Intro />
       </main>
     </div>
   );

@@ -6,17 +6,16 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      cbfont: "#05d9e8",
-      cbshadow: "#005678",
-      frame: "#ff2a6d",
-      midnight: "#01011B",
-      lavender: "#E0D9F6",
-      cbpurple: "#C252E1",
+    extend: {
+      colors: {
+        cbfont: "#05d9e8",
+        cbshadow: "#005678",
+        frame: "#ff2a6d",
+        midnight: "#01011B",
+        lavender: "#E0D9F6",
+        cbpurple: "#C252E1",
+      },
     },
   },
-
   plugins: [],
 };

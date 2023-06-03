@@ -1,27 +1,83 @@
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import Typical from "react-typical";
 
+const InitialLogoStates = {
+  initial: {
+    opacity: 0,
+  },
+  middle: {
+    opacity: 1,
+    transition: {
+      duration: 3.5,
+    },
+  },
+  exit: {
+    opacity: 0,
+  },
+  hover: { scale: 1.3 },
+};
 
-function InitialLogo () {
-  
-}
-
-function TansitionLogo(){
-  
-
-}
-
+export const InitialLogo = () => {
+  return (
+    <>
+      <motion.img
+        src="/img/IL.png"
+        className="w-[330px]"
+        variants={InitialLogoStates}
+        initial="initial"
+        animate="middle"
+        exit="exit"
+        whileHover="hover"
+      ></motion.img>
+    </>
+  );
+};
 
 const Intro = () => {
-  return (
-    <div id="IntroContainer">
-      <div id="nameBox" className="border-2 border-frame">
-        <Image src="/img/ChrisLogo.png" width={700} height={700}></Image>
-        <h1 className="text-cbfont"> Sifeng Chen </h1>
-      </div>
-      <h1> Hey, my name is Chris </h1>
+  const [flashy, setFlashy] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
-      <h1> I am a Full stack developer</h1>
-    </div>
+  function handleHover() {}
+
+  return (
+    <>
+      <div
+        id="IntroContainer"
+        className="flex flex-col items-center border- w-[350px]"
+      >
+        <motion.div onMouseEnter={handleHover} className="">
+          {/* <button className="text-red-500">Toggle Image</button> */}
+          <InitialLogo />
+        </motion.div>
+
+        <div
+          id="pContainer"
+          className="mt-[20px] flex justify-start border- w-[100%]"
+        >
+          <p className="text-white">
+            I{" "}
+            <Typical
+              steps={[
+                "am a developer",
+                1000,
+                "love music",
+                1000,
+                "love coffee",
+                1000,
+                "and I love working out!",
+                1000,
+              ]}
+              loop={Infinity}
+              wrapper="b"
+            />
+          </p>
+        </div>
+
+        {/* <h1 className="text-gray-100"> Hello</h1> */}
+      </div>
+    </>
   );
 };
 

@@ -66,7 +66,7 @@ const Intro = () => {
                 1000,
                 "love coffee",
                 1000,
-                "and I love working out!",
+                "also love to working out!",
                 1000,
               ]}
               loop={Infinity}

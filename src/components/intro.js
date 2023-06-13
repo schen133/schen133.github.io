@@ -68,10 +68,10 @@ const Intro = () => {
           <motion.svg
             width="100%"
             height="200"
-            viewBox="35 140 500 140"
+            viewBox="35 140 500 178"
             initial="hidden"
             animate="visible"
-            className="absolute top-0 left-[-5px] stroke-[4px] stroke-rounded"
+            className="absolute top-0 left-[-5px] stroke-[4px] stroke-rounded pointer-events-none inset-0"
           >
             <motion.line
               x1="102"

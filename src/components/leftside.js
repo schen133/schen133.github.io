@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <div
       id="headerContainer"
-      className="flex h-full border- bg- w-full lg:w-1/2 lg:flex-col"
+      className="flex h-full border- bg- w-full lg:w-1/2 lg:flex-col lg:sticky lg:top-0 lg:py-24"
     >
       <div id="textContainer">
         <h1 className="text-4xl sm:text-5xl font-bold text-darktext ">

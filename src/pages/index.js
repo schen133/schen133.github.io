@@ -15,14 +15,14 @@ export default function Home() {
     // #F0DAD2
     // #f7f7e6
 
-    <div className="h-screen bg-[#FBFBEA]">
+    <div className="min-h-screen bg-[#FBFBEA]">
       <main
         id="screen"
-        className="flex font-sans h-full w-full justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24"
+        className="flex font-sans h-full w-full justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0"
       >
         <div
           id="indexContainer"
-          className="flex flex-col lg:flex-row h-full w-full max-w-[1088px]"
+          className="flex flex-col lg:flex-row h-full w-full max-w-[1088px] lg:gap-2 lg:justify-between"
         >
           <Header />
           <Content />

@@ -18,6 +18,7 @@ module.exports = {
         mediumtext: "#474838",
         lighttext: "#5F5F4F",
         accent: "#00917C",
+        lightAccent: "#7FD1AE",
       },
     },
   },

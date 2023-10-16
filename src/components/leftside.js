@@ -39,7 +39,7 @@ const Header = () => {
           Software Developer
         </h2>
 
-        <p className="mt-4 max-w-xs leading-normal font-normal text-mediumtext">
+        <p className="mt-4 max-w-xs leading-normal font-normal text-mediumtext border- h-[40px]">
           <span ref={el} />
         </p>
       </div>

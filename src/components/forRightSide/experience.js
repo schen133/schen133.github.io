@@ -66,7 +66,7 @@ const Experience = () => {
 
       <div id="experienceContainer" className="flex flex-col space-y-12">
         {Experiences.map((Experience) => (
-          <ExperienceCard Experience={Experience} />
+          <ExperienceCard Experience={Experience} key={id}/>
         ))}
       </div>
 

@@ -57,15 +57,15 @@ const ExperienceCard = ({ Experience }) => {
             id="bulletPoints"
             className="text-mediumtext text-sm leading-normal mt-2 flex flex-col space-y-1"
           >
-            {Experience.bulletPoints.map((bp) => (
-              <p> {bp}</p>
+            {Experience.bulletPoints.map((bp, index) => (
+              <p key={index}> {bp}</p>
             ))}
           </div>
 
           <div id="skillTags" className="mt-2">
             <ul className="flex flex-wrap">
-              {Experience.skills.map((skill) => (
-                <li className="mr-1.5 mt-2">
+              {Experience.skills.map((skill, index) => (
+                <li className="mr-1.5 mt-2" key={index}>
                   <a class="flex items-center rounded-full bg-teal-500/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">
                     {skill}
                   </a>{" "}

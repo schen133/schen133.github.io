@@ -1,4 +1,4 @@
-import About from "./forRightside/about";
+import About from "./forRightSide/about";
 import Experience from "./forRightSide/experience";
 import Projects from "./forRightSide/project";
 

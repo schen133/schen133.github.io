@@ -1,5 +1,7 @@
 import Header from "@/components/leftside";
 import Content from "@/components/rightside";
+import Head from "next/head";
+import Image from "next/image";
 // import Projects from "@/components/Projects";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -10,6 +12,9 @@ export default function Home() {
     // #f7f7e6
 
     <div className="min-h-screen bg-[#FBFBEA]">
+      <Head>
+        <title> Sifeng Chen</title>
+      </Head>
       <main
         id="screen"
         className="flex font-sans h-full w-full justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0"
@@ -20,6 +25,7 @@ export default function Home() {
         >
           <Header />
           <Content />
+         
         </div>
       </main>
     </div>

@@ -1,6 +1,22 @@
 import ExperienceCard from "./featureComponents/experienceCard";
+import { useRef, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
+import useFeatureStore from "@/utils/useFeatureStore";
 
 const Experience = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "-50% 0px -50% 0px" });
+  const setInViewFeature = useFeatureStore((state) => state.setInViewFeature);
+
+  useEffect(() => {
+    if (isInView) {
+      setInViewFeature("experience");
+    }
+    // if(!isInView && inViewFeature === step.num){
+    //     setInViewFeature(null);
+    // }
+  }, [isInView, "experience", setInViewFeature]);
+
   const Experiences = [
     {
       company: "ROC Human-Computer Interaction Lab",
@@ -52,12 +68,16 @@ const Experience = () => {
       },
       skills: ["React", "NextJS", "ChakraUI", "TypeScript"],
       url: "https://www.linkedin.com/company/roclab-at-university-of-rochester/",
-      id:"RocLab"
+      id: "RocLab",
     },
   ];
 
   return (
-    <section className="flex flex-col mb-16 mt- md:mb-24 lg:mb-36 lg:mt-0">
+    <section
+      ref={ref}
+      id="experience"
+      className="flex flex-col mb-16 mt- md:mb-24 lg:mb-36 lg:scroll-mt-24 border-"
+    >
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 lg:sr-only">
         <h1 className="text-sm font-bold uppercase tracking-widest text-darktext lg:">
           Experience
@@ -66,11 +86,35 @@ const Experience = () => {
 
       <div id="experienceContainer" className="flex flex-col space-y-12">
         {Experiences.map((Experience) => (
-          <ExperienceCard Experience={Experience} key={Experience.id}/>
+          <ExperienceCard Experience={Experience} key={Experience.id} />
         ))}
       </div>
 
-      <div className="mt-20"> Resume </div>
+      <div className="mt-12">
+        {" "}
+        <a
+          className="group flex flex-row font-medium text-darktext "
+          href="/SifengChen_resume_new.pdf"
+          target="_blank"
+        >
+          <h1 className="group-hover:text-accent transition duration-200 group-hover:translate-x-[-5px]">
+            {" "}
+            Resume Here{" "}
+          </h1>
+          <span className=" mt-[1px] group-hover:text-accent group-hover:translate-x-[8px] transition duration-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentcolor"
+              viewBox="0 0 24 24"
+              className=""
+            >
+              <path d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
     </section>
   );
 };

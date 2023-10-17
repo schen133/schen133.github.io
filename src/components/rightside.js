@@ -1,6 +1,7 @@
 import About from "./forRightSide/about";
 import Experience from "./forRightSide/experience";
 import Projects from "./forRightSide/project";
+import OpenSource from "./forRightSide/openSource";
 
 const Content = () => {
   return (
@@ -11,9 +12,9 @@ const Content = () => {
       <About />
       <Experience />
 
-      
+      <Projects />
 
-    
+      {/* <OpenSource /> */}
     </div>
   );
 };

@@ -9,7 +9,7 @@ export default function Home() {
     // #F0DAD2
     // #f7f7e6
 
-    <div className="min-h-screen bg-[#FBFBEA] scroll-smooth">
+    <div className="min-h-screen bg-[#FBFBEA]">
       <main
         id="screen"
         className="flex font-sans h-full w-full justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0"

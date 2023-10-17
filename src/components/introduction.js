@@ -1,4 +1,4 @@
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 const Introduction = () => {
   return (
@@ -14,7 +14,7 @@ const Introduction = () => {
           {/* <p className="mt-[12px] text-black font-mono text-sm w-[220px] border- ml-[37px]"> */}
           <p className=" mt-[12px] text-mediumtext font-mono text-md border-">
             I{" "}
-            <Typical
+            {/* <Typical
               steps={[
                 "am a developer",
                 1000,
@@ -28,7 +28,7 @@ const Introduction = () => {
               ]}
               loop={1}
               wrapper="b"
-            />
+            /> */}
           </p>
         </div>
         <div id="profileContainer" className="border- w-1/2">

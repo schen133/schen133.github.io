@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 const InitialLogoStates = {
   initial: {
@@ -157,21 +157,7 @@ const Intro = () => {
             Hi, I{"'"}m Sifeng Chen
           </p>
           <p className="mt-[12px] text-black font-mono text-sm">
-            I{" "}
-            <Typical
-              steps={[
-                "am a developer",
-                1000,
-                "love music",
-                1000,
-                "love coffee",
-                1000,
-                "also love to work out!",
-                1000,
-              ]}
-              loop={Infinity}
-              wrapper="b"
-            />
+          
           </p>
         </div>
 

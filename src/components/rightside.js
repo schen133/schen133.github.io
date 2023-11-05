@@ -18,11 +18,11 @@ const Content = () => {
 
         {/* <OpenSource /> */}
       </div>{" "}
-      <div className="w-full flex border- items-end justify-end">
+      <div className="w-full flex border- items-end pb-[50px] justify-end">
         <Image
-          src="/img/footer.png"
-          width={200}
-          height={200}
+          src="/letter-s-light.png"
+          width={100}
+          height={100}
           className="border-"
         />
       </div>

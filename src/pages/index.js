@@ -14,7 +14,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#FBFBEA]">
       <Head>
         <title> Sifeng Chen</title>
-        <link rel="icon" href="/letter-s.ico" />
+        <link rel="icon" href="/letter-s-light.ico" />
       </Head>
       <main
         id="screen"

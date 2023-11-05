@@ -21,15 +21,22 @@ const Projects = () => {
   const ProjectList = [
     {
       projectName: "Revi web application",
-      description: "This is an application.....",
+      description: "ReviCID",
       picture: "/img/ReviScreenShot.png",
       url: "",
     },
     {
       projectName: "Social Media Web App for Experiments",
-      description: "This is a phone app",
+      description: "Rochester Human Computer Interaction Lab",
       picture: "/img/HCI.png",
       url: "",
+    },
+    {
+      projectName: "Personalized Meal Plan Generation",
+      description:
+        "A full stack web application hosted on vercel built using NextJS, React, TailwindCSS, Auth0, and Google Cloud. The web app scrapes the daily menu off campus' dinning hall menu every 12 hours and use the data to generate your personalized meal plans.",
+      picture: "/img/campusPlate.png",
+      url: "https://campus-plate-2023.vercel.app/",
     },
     // {
     //   projectName: "Reversi with AI opponent",

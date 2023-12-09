@@ -34,36 +34,35 @@ const About = () => {
         <TextReveal>
           <p className="mb-4">
             {" "}
-            As a Computer Science student at the University of Rochester, I am
-            passionate about solving problems and building innovative products
-            from the ground up. I have experience in building
-            <span className="text-accent font-semibold"> Web App</span> and{" "}
-            <span className="text-accent font-semibold">iOS softwares</span> and
-            I am always eager to learn about new tools and gain new experiences.{" "}
+            Welcome to my personal page! My name is Sifeng or you can just call
+            me Chris. I am a graduting Computer Science student at the
+            University of Rochester and Sofware Engineer who specialize in
+            building scalable
+            <span className="text-accent font-semibold">
+              {" "}
+              Web Applications
+            </span>{" "}
+            with an interest in{" "}
+            <span className="text-accent font-semibold"> design </span>or you
+            can say "stubborn" with quality UI.
           </p>
         </TextReveal>
         <TextReveal2>
           {" "}
           <p className="mb-4">
-            In addition to the technical aspect, I am also deeply interested in
+            So far, I've had the chance to work at{" "}
             <span className="text-accent font-semibold">
-              {" "}
-              entrepreneurship
+              a research lab, a student-led software consultancy, and a start-up
             </span>{" "}
-            and the{" "}
-            <span className="text-accent font-semibold"> business side </span>
-            of technology. Why? I believe technology can change the world we
-            live in and my ambition is to be a part of that change.{" "}
+            that's in the top 10% of applicants in YCombinator. Throughout these
+            experiences, I've gain valuable experiences of different sofware
+            development practices and methodologies.
           </p>
         </TextReveal2>
         <TextReveal4>
           {" "}
-          <p className="mb-4">
-            {" "}
-            If you are looking for a driven developer/engineer with a passion
-            for problem-solving, entrepreneurship, and innovative solutions, I
-            would love to connect with you. Let's get to work!
-          </p>
+          I am current looking for new opportunities. Whether you have any
+          question or would like to reach out to me, please do so!
         </TextReveal4>
       </div>
     </section>

@@ -20,31 +20,25 @@ const Projects = () => {
 
   const ProjectList = [
     {
-      projectName: "Revi web application",
-      description: "ReviCID",
+      projectName: "Revi Software",
+      description: "Revi's primary sofware built with NextJS, React, TailwindCSS, and Framer Motion. ",
       picture: "/img/ReviScreenShot.png",
-      url: "",
+      url: "https://revicid.com",
     },
     {
-      projectName: "Social Media Web App for Experiments",
-      description: "Rochester Human Computer Interaction Lab",
+      projectName: "Social Media Web App",
+      description:
+        "A scalable full stack web application built with Meteor.js and MongoDB. This production ready web app offers a comprehensive solution for researchers, enabling them not only to host experiments and batches with participants with ease but also helps them efficiently to gather and manage data.",
       picture: "/img/HCI.png",
       url: "",
     },
     {
       projectName: "Personalized Meal Plan Generation",
       description:
-        "A full stack web application hosted on vercel built using NextJS, React, TailwindCSS, Auth0, and Google Cloud. The web app scrapes the daily menu off campus' dinning hall menu every 12 hours and use the data to generate your personalized meal plans.",
+        "A full stack web application hosted on vercel built using NextJS, React, TailwindCSS, Auth0, and Google Cloud. The web app scrapes the daily menu off campus' dinning hall menu every 12 hours and use the data to generate your personalized meal plans for the day on campus.",
       picture: "/img/campusPlate.png",
       url: "https://campus-plate-2023.vercel.app/",
     },
-    // {
-    //   projectName: "Reversi with AI opponent",
-    //   description:
-    //     "This is a reversi game built using Java. There also comes with a AI opponent/",
-    //   picture: "",
-    //   url: "",
-    // },
   ];
 
   return (

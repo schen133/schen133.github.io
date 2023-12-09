@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "I am a developer",
+        "I am a developer/engineer",
         "I love music 🎉 🎵",
         "I love coffee and matcha 🍵",
         "I also love to work out 🏋🏻‍♂️",
@@ -36,7 +36,7 @@ const Header = () => {
         </h1>
 
         <h2 className="mt-3 text-lg sm:text-xl font-medium text-darktext">
-          Software Developer
+          Software Engineer
         </h2>
 
         <p className="mt-4 max-w-xs leading-normal font-normal text-mediumtext border- h-[40px]">

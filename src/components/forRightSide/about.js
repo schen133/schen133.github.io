@@ -61,7 +61,7 @@ const About = () => {
         </TextReveal2>
         <TextReveal4>
           {" "}
-          I am current looking for new opportunities. Whether you have any
+          I am currently looking for new opportunities. Whether you have any
           question or would like to reach out to me, please do so!
         </TextReveal4>
       </div>

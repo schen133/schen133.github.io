@@ -31,7 +31,7 @@ export default function Home() {
         <div
           id="themeToggleButton"
           className={classNames(
-            "flex z-40 fixed right-[60px] top-[20px] lg:top-[50px] w-[60px] h-[30px] rounded-[50px] items-center cursor-pointer px-2 group transition",
+            "flex z-40 fixed  top-[15px] right-[15px] lg:right-[60px] lg:top-[50px] w-[60px] h-[30px] rounded-[50px] items-center cursor-pointer px-2 group transition",
             on ? "bg-white/40 justify-end" : "bg-black/40 justify-start"
           )}
           //  data-isOn={isOn} onClick={toggleSwitch}

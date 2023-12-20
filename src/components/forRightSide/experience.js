@@ -93,7 +93,7 @@ const Experience = () => {
       <div className="mt-12">
         {" "}
         <a
-          className="group flex flex-row font-medium text-darktext "
+          className="group flex flex-row font-medium text-darktext dark:text-ddarktext "
           href="/SifengChen_resume_new.pdf"
           target="_blank"
         >

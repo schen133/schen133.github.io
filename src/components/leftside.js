@@ -31,15 +31,15 @@ const Header = () => {
       className="lg:flex border- bg- w-full lg:w-1/2 lg:flex-col lg:sticky lg:top-0 lg:py-24 lg:justify-between lg:max-h-screen border-"
     >
       <div id="textContainer">
-        <h1 className="text-4xl sm:text-5xl font-bold text-darktext ">
+        <h1 className="text-4xl sm:text-5xl font-bold text-darktext dark:text-ddarktext ">
           <span className=""> Hi,</span> I'm Sifeng Chen
         </h1>
 
-        <h2 className="mt-3 text-lg sm:text-xl font-medium text-darktext">
+        <h2 className="mt-3 text-lg sm:text-xl font-medium text-darktext dark:text-ddarktext">
           Software Engineer
         </h2>
 
-        <p className="mt-4 max-w-xs leading-normal font-normal text-mediumtext border- h-[40px]">
+        <p className="mt-4 max-w-xs leading-normal font-normal text-mediumtext dark:text-dmediumtext border- h-[40px]">
           <span ref={el} />
         </p>
         <NavBar />
@@ -47,7 +47,7 @@ const Header = () => {
 
       <ul
         id="socialMediaIcons"
-        className="ml-1 mt-8 flex items-center text-darktext"
+        className="ml-1 mt-8 flex items-center text-darktext dark:text-dlighttext "
       >
         {/* <li>About</li>
         <li>Experience</li>

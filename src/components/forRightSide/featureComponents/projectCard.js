@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
               className="absolute border- -inset-x-4 -inset-y-4 hidden rounded md:-inset-x-6 lg:-inset-x-6 md:block"
             ></span>
             <div className="flex flex-row space-x- w-full">
-              <h1 className="font-bold text-darktext group-hover:text-accent transition-color ease-in-out duration-200 border- w-full">
+              <h1 className="font-bold text-darktext dark:text-ddarktext group-hover:text-accent transition-color ease-in-out duration-200 border- w-full">
                 {project.projectName}{" "}
               </h1>
               <svg
@@ -68,7 +68,7 @@ const ProjectCard = ({ project }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-darktext group-hover:text-accent group-hover:scale-150 animate-pulse transition duration-300 ease-in-out"
+                className="text-darktext dark:text-ddarktext group-hover:text-accent group-hover:scale-150 animate-pulse transition duration-300 ease-in-out"
               >
                 <circle cx="12" cy="12" r="1" />
                 <circle cx="19" cy="12" r="1" />
@@ -78,7 +78,7 @@ const ProjectCard = ({ project }) => {
           </a>
           <div
             id="bulletPoints"
-            className="text-mediumtext text-sm leading-normal mt-2 flex flex-col space-y-1"
+            className="text-mediumtext dark:text-dmediumtext text-sm leading-normal mt-2 flex flex-col space-y-1"
           >
             <p> {project.description}</p>
           </div>{" "}

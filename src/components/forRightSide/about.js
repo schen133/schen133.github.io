@@ -29,7 +29,7 @@ const About = () => {
         </h1>
       </div>
 
-      <div className="text-mediumtext">
+      <div className="text-mediumtext dark:text-dmediumtext">
         {" "}
         <TextReveal>
           <p className="mb-4">

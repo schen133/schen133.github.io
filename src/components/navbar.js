@@ -23,7 +23,9 @@ const NavBar = () => {
             <span
               className={classNames(
                 "text-xs font-bold uppercase tracking-widest group-hover:text-accent group-focus-visible:text-slate-200",
-                inViewFeature == "about" ? "text-accent" : "text-lighttext"
+                inViewFeature == "about"
+                  ? "text-accent"
+                  : "text-lighttext dark:text-dlighttext"
               )}
             >
               {" "}
@@ -46,7 +48,9 @@ const NavBar = () => {
             <span
               className={classNames(
                 "text-xs font-bold uppercase tracking-widest group-hover:text-accent group-focus-visible:text-slate-200",
-                inViewFeature == "experience" ? "text-accent" : "text-lighttext"
+                inViewFeature == "experience"
+                  ? "text-accent"
+                  : "text-lighttext dark:text-dlighttext"
               )}
             >
               Experience
@@ -68,7 +72,9 @@ const NavBar = () => {
             <span
               className={classNames(
                 "text-xs font-bold uppercase tracking-widest group-hover:text-accent group-focus-visible:text-slate-200",
-                inViewFeature == "projects" ? "text-accent" : "text-lighttext"
+                inViewFeature == "projects"
+                  ? "text-accent"
+                  : "text-lighttext dark:text-dlighttext"
               )}
             >
               Projects
@@ -80,7 +86,7 @@ const NavBar = () => {
             <span className="nav-indicator mr-4 h-px w-8 bg-lighttext transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
               {" "}
             </span>
-            <span className="text-xs font-bold uppercase tracking-widest text-lighttext group-hover:text-accent group-focus-visible:text-slate-200">
+            <span className="text-xs font-bold uppercase tracking-widest text-lighttext dark:text-dlighttext group-hover:text-accent group-focus-visible:text-slate-200">
               {" "}
               Open source
             </span>

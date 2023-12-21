@@ -31,20 +31,74 @@ export default function Home() {
         <div
           id="themeToggleButton"
           className={classNames(
-            "flex z-40 fixed  top-[15px] right-[15px] lg:right-[60px] lg:top-[50px] w-[60px] h-[30px] rounded-[50px] items-center cursor-pointer px-2 group transition",
-            on ? "bg-white/40 justify-end" : "bg-black/40 justify-start"
+            "z-40 fixed  top-[15px] right-[15px] lg:right-[60px] lg:top-[50px] w-[60px] h-[30px] rounded-[50px] cursor-pointer  transition",
+            on ? "bg-bg/40 " : "bg-dbg/40"
           )}
           //  data-isOn={isOn} onClick={toggleSwitch}
           onClick={() => setOn(!on)}
         >
-          <motion.div
+          <div
+            id="moonAndSun"
+            className="flex flex-row h-full w-full px-2 absolute items-center justify-between"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className={classNames(
+                "text-dbg transition",
+                on ? "opacity-1" : "opacity-0"
+              )}
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className={classNames(
+                "text-bg transition",
+                on ? "opacity-0" : "opacity-1"
+              )}
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+          </div>
+          <div
             className={classNames(
-              "w-[20px] h-[20px] rounded-[40px] bg-white dark:bg-dark",
-              on ? " " : ""
+              "flex items-center h-full px-2 ",
+              on ? "justify-end" : " justify-start"
             )}
-            layout
-            transition={spring}
-          />
+          >
+            <motion.div
+              className={classNames(
+                "w-[20px] h-[20px] rounded-[40px] bg-bg dark:bg-dbg border-",
+                on ? " " : ""
+              )}
+              layout
+              transition={spring}
+            />
+          </div>
         </div>{" "}
         <div
           id="indexContainer"

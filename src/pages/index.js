@@ -15,8 +15,8 @@ export default function Home() {
   const spring = {
     type: "spring",
     stiffness: 700,
-    damping: 30,
-  };
+    damping: 20,
+  }
   return (
     <div className={classNames("min-h-screen transition", on ? "dark" : "")}>
       <Head>

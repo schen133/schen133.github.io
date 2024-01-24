@@ -21,9 +21,17 @@ const Projects = () => {
   const ProjectList = [
     {
       projectName: "Revi Software",
-      description: "Revi's primary sofware built with NextJS, React, TailwindCSS, and Framer Motion. ",
+      description:
+        "Revi's primary sofware built with NextJS, React, TailwindCSS, and Framer Motion. ",
       picture: "/img/ReviScreenShot.png",
       url: "https://revicid.com",
+    },
+    {
+      projectName: "Revi home page",
+      description:
+        "A static landing page developed using React, styled using TailwindCSS, and animated using Framer Motion.",
+      picture: "/img/revi_new_design.png",
+      url: "https://www.revicid.com/industry/supplychain",
     },
     {
       projectName: "Social Media Web App",

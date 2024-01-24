@@ -30,7 +30,7 @@ const Projects = () => {
       projectName: "Revi home page",
       description:
         "A static landing page developed using React, styled using TailwindCSS, and animated using Framer Motion.",
-      picture: "/img/campusPlate.png",
+      picture: "/img/revi_new_design.png",
       url: "https://www.revicid.com/industry/supplychain",
     },
     {

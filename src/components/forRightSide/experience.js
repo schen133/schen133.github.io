@@ -94,7 +94,7 @@ const Experience = () => {
         {" "}
         <a
           className="group flex flex-row font-medium text-darktext dark:text-ddarktext "
-          href="/SifengChen_resume_new.pdf"
+          href="/SifengChen_Resume__1_08_24_.pdf"
           target="_blank"
         >
           <h1 className="group-hover:text-accent transition duration-200 group-hover:translate-x-[-5px]">

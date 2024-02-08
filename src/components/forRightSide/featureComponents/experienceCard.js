@@ -1,7 +1,7 @@
 import TextReveal from "../animationComponents/TextReveal";
 import { TextReveal2, TextReveal3 } from "../animationComponents/TextReveal";
 
-const ExperienceCard = ({ Experience }) => {
+const ExperienceCard = ({ experience }) => {
   return (
     <div id="experienceCard" className="relative group border-">
       <div className="absolute border- md:group-hover:bg-[#C2C3B2] -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:-inset-y- md:block md:group-hover:shadow-accent md:group-hover:drop-shadow-lg opacity-[.12]">
@@ -16,7 +16,7 @@ const ExperienceCard = ({ Experience }) => {
         >
           <TextReveal>
             {" "}
-            {Experience.time.from} — {Experience.time.to}
+            {experience.time.from} — {experience.time.to}
           </TextReveal>
         </div>
         <div
@@ -26,7 +26,7 @@ const ExperienceCard = ({ Experience }) => {
           <div id="titleAndCompany" className="flex flex-col font-medium ">
             <a
               className="group/link flex flex-row"
-              href={Experience.url}
+              href={experience.url}
               target="_blank"
             >
               <span
@@ -35,7 +35,7 @@ const ExperienceCard = ({ Experience }) => {
               ></span>
               <div className="flex flex-row space-x-2 w-full border-">
                 <h1 className="font-bold text-darktext dark:text-ddarktext  group-hover:text-accent transition-color ease-in-out duration-200 border- w-full border-">
-                  <TextReveal> {Experience.company} </TextReveal>
+                  <TextReveal> {experience.company} </TextReveal>
                 </h1>
 
                 <svg
@@ -59,7 +59,7 @@ const ExperienceCard = ({ Experience }) => {
             <TextReveal>
               {" "}
               <h3 className="text-mediumtext dark:text-dmediumtext">
-                {Experience.role}{" "}
+                {experience.role}{" "}
               </h3>
             </TextReveal>
           </div>
@@ -69,16 +69,19 @@ const ExperienceCard = ({ Experience }) => {
             className="text-mediumtext dark:text-dmediumtext text-sm leading-normal mt-2 flex flex-col space-y-1"
           >
             <TextReveal2>
-              {Experience.bulletPoints.map((bp, index) => (
-                <p key={index}> {bp}</p>
+              {experience.bulletPoints.map((bp, index) => (
+                <p className="mb-2" key={index}>
+                  {" "}
+                  {bp}
+                </p>
               ))}
             </TextReveal2>
           </div>
 
-          <div id="skillTags" className="mt-2">
+          <div id="skillTags" className="mt-">
             <TextReveal3>
               <ul className="flex flex-wrap">
-                {Experience.skills.map((skill, index) => (
+                {experience.skills.map((skill, index) => (
                   <li className="mr-1.5 mt-2" key={index}>
                     <a class="flex items-center rounded-full bg-teal-500/10 px-3 py-1 text-xs font-medium leading-5 text-accent ">
                       {skill}

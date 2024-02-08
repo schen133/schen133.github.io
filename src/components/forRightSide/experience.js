@@ -22,17 +22,27 @@ const Experience = () => {
       company: "ROC Human-Computer Interaction Lab",
       role: "Software Engineer",
       bulletPoints: [
-        "Developed a full-stack web application using MeteorJS, ensuring user-friendly interface and seamless functionality.",
-        "Leveraged Cloud Dev tools, such as MongoDB Atlas, to establish an efficient and secure database for the web app",
-        "Optimized the application’s scalability and performance, reducing CPU usage by 85% and runtime by 90%.",
-        "Conducted comprehensive testing using Puppeteer, guaranteeing application’s reliability across various scenarios.",
-        "Enhanced open-source to meet the lab’s specific needs and documented contributions along with a developer guidefor public use.",
+        // "Developed a full-stack web application using MeteorJS, ensuring user-friendly interface and seamless functionality.",
+        // "Leveraged Cloud Dev tools, such as MongoDB Atlas, to establish an efficient and secure database for the web app",
+        // "Optimized the application’s scalability and performance, reducing CPU usage by 85% and runtime by 90%.",
+        // "Conducted comprehensive testing using Puppeteer, guaranteeing application’s reliability across various scenarios.",
+        "Designing, developing, and deploying fullstack web applications for research scientists to use for data collecting and experiments purposes.",
+        "Working directly with the open source framework, Empirica V1, to develop additional features of framework and enhance higher level developer experiences for researchers.",
       ],
       time: {
         from: "March 2023",
         to: "Present",
       },
-      skills: ["React", "MeteorJS", "TailwindCSS", "JavaSript"],
+      skills: [
+        "React",
+        "MeteorJS",
+        "TailwindCSS",
+        "JavaSript",
+        "Docker",
+        "Kubernetes",
+        "MongoDB",
+        "Puppeteer",
+      ],
       url: "https://roc-hci.com/",
       id: "HCI",
     },
@@ -40,16 +50,26 @@ const Experience = () => {
       company: "ReviCID",
       role: "Software Developer",
       bulletPoints: [
-        "Spearheaded frontend development for the company’s website and primary software during the early stages.",
-        "Implemented various API services such as AWS S3, CloudFront, Auth0, and Stripe to enhance user experience.",
-        "Adopted the Bulletproof React software architecture for a scalable and production-ready NextJS application.",
-        "Researched websites of industry-standard companies and collaborated with team members for design concepts.",
+        // "Spearheaded frontend development for the company’s website and primary software during the early stages.",
+        // "Implemented various API services such as AWS S3, CloudFront, Auth0, and Stripe to enhance user experience.",
+        // "Adopted the Bulletproof React software architecture for a scalable and production-ready NextJS application.",
+        // "Researched websites of industry-standard companies and collaborated with team members for design concepts.",
+        "Leading frontend development of company's primary software.",
+        "Designing, developing, shipping websites, features, and prototypes to investors and clients.",
+        "Designing frontend application's architecture and optimizing performance ensuring a maintainable and scalable codebase.",
       ],
       time: {
         from: "May 2023",
         to: "Present",
       },
-      skills: ["React", "NextJS", "TailwindCSS", "Framer Motion", "JavaSript"],
+      skills: [
+        "React",
+        "NextJS",
+        "JavaSript",
+        "TailwindCSS",
+        "Framer Motion",
+        "Figma",
+      ],
       url: "https://revicid.com/",
       id: "REVI",
     },
@@ -85,8 +105,8 @@ const Experience = () => {
       </div>
 
       <div id="experienceContainer" className="flex flex-col space-y-12">
-        {Experiences.map((Experience) => (
-          <ExperienceCard Experience={Experience} key={Experience.id} />
+        {Experiences.map((experience) => (
+          <ExperienceCard experience={experience} key={Experience.id} />
         ))}
       </div>
 

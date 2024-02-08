@@ -20,16 +20,16 @@ const Projects = () => {
 
   const ProjectList = [
     {
-      projectName: "Revi Software",
+      projectName: "Revi Primary Software",
       description:
-        "Revi's primary sofware built with NextJS, React, TailwindCSS, and Framer Motion. ",
+        "Revi's primary sofware built with NextJS, TailwindCSS, and Framer Motion for interactive animation. ",
       picture: "/img/ReviScreenShot.png",
       url: "https://revicid.com",
     },
     {
-      projectName: "Revi home page",
+      projectName: "Revi Home Page",
       description:
-        "A static landing page developed using React, styled using TailwindCSS, and animated using Framer Motion.",
+        "A static landing page designed with Figma and developed using React, styled using TailwindCSS, and animated using Framer Motion.",
       picture: "/img/revi_new_design.png",
       url: "https://www.revicid.com/industry/supplychain",
     },

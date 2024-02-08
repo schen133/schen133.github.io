@@ -43,8 +43,8 @@ const About = () => {
               Web Applications
             </span>{" "}
             with an interest in{" "}
-            <span className="text-accent font-semibold"> design </span>or you
-            can say "stubborn" with quality UI.
+            <span className="text-accent font-semibold"> design</span>. You can
+            say I am quite "stubborn" with quality UI.
           </p>
         </TextReveal>
         <TextReveal2>
@@ -54,9 +54,10 @@ const About = () => {
             <span className="text-accent font-semibold">
               a research lab, a student-led software consultancy, and a start-up
             </span>{" "}
-            that's in the top 10% of applicants in YCombinator. Throughout these
-            experiences, I've gain valuable experiences in different sofware
-            development practices and methodologies.
+            that's in the top 10% of applicants in YCombinator. I am also a
+            freelancer part-time and I build websites for small business owners.
+            Through these experiences, I've gain valuable experiences in
+            different sofware development tools, practices, and methodologies.
           </p>
         </TextReveal2>
         <TextReveal4>

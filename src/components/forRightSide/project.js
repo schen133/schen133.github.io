@@ -24,14 +24,14 @@ const Projects = () => {
       description:
         "Revi's primary sofware built with NextJS, TailwindCSS, and Framer Motion for interactive animation. ",
       picture: "/img/ReviScreenShot.png",
-      url: "https://revicid.com",
+      url: "https://infoscout.ai",
     },
     {
       projectName: "Revi Home Page",
       description:
         "A static landing page designed with Figma and developed using React, styled using TailwindCSS, and animated using Framer Motion.",
       picture: "/img/revi_new_design.png",
-      url: "https://www.revicid.com/industry/supplychain",
+      url: "https://infoscout.ai/industry/supplychain",
     },
     {
       projectName: "Social Media Web App",

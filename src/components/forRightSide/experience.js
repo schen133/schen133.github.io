@@ -70,7 +70,7 @@ const Experience = () => {
         "Framer Motion",
         "Figma",
       ],
-      url: "https://revicid.com/",
+      url: "https://infoscout.ai",
       id: "REVI",
     },
 

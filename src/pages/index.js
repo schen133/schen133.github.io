@@ -3,31 +3,56 @@ import Content from "@/components/rightside";
 import Head from "next/head";
 import Image from "next/image";
 import classNames from "classnames";
-import { motion } from "framer-motion";
+import { calcLength, motion } from "framer-motion";
 import { useState } from "react";
 // import Projects from "@/components/Projects";
 
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [on, setOn] = useState(false);
+  const [on, setOn] = useState(true);
 
   const spring = {
     type: "spring",
     stiffness: 700,
     damping: 20,
-  }
+  };
+
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (e) => {
+    const { clientX, clientY } = e;
+    setMousePosition({ x: clientX, y: clientY });
+  };
+
   return (
-    <div className={classNames("min-h-screen transition", on ? "dark" : "")}>
+    <div
+      className={classNames("min-h-screen transition", on ? "dark" : "")}
+      onMouseMove={(e) => handleMouseMove(e)}
+    >
       <Head>
         <title> Sifeng Chen</title>
         <link rel="icon" href="/letter-s-light.ico" />
+        <meta
+          name="description"
+          content="Sifeng Chen's personal website"
+        ></meta>
+        <meta
+          name="keywords"
+          content="Sifeng Chen, Chris Chen, Chris Sifeng Chen, University of Rochester, Software Engineer"
+        ></meta>
+        <meta name="author" content="Sifeng Chen"></meta>
       </Head>
       <main
         id="screen"
         className="bg-bg dark:bg-dbg relative flex font-sans h-full w-full justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 transition"
       >
-        {" "}
+        <div
+          className={on ? "fixed inset-0 z-0" : "hidden"}
+          style={{
+            // background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+            background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgb(18, 100, 18, 0.15), transparent 80%)`,
+          }}
+        ></div>{" "}
         <div
           id="themeToggleButton"
           className={classNames(

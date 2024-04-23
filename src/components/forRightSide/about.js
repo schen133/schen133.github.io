@@ -57,7 +57,7 @@ const About = () => {
             that's in the top 10% of applicants in YCombinator. I am also a
             freelancer part-time and I build websites for small business owners.
             Through these experiences, I've gain valuable experiences in
-            different sofware development tools, practices, and methodologies.
+            different software development tools, practices, and methodologies.
           </p>
         </TextReveal2>
         <TextReveal4>

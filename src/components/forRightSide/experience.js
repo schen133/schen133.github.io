@@ -48,7 +48,7 @@ const Experience = () => {
     },
     {
       company: "ReviCID",
-      role: "Software Developer",
+      role: "Software Engineer",
       bulletPoints: [
         // "Spearheaded frontend development for the company’s website and primary software during the early stages.",
         // "Implemented various API services such as AWS S3, CloudFront, Auth0, and Stripe to enhance user experience.",
@@ -114,7 +114,7 @@ const Experience = () => {
         {" "}
         <a
           className="group flex flex-row font-medium text-darktext dark:text-ddarktext "
-          href="/SifengChen_Resume__1_08_24_.pdf"
+          href="/sifengchen_resume.pdf"
           target="_blank"
         >
           <h1 className="group-hover:text-accent transition duration-200 group-hover:translate-x-[-5px]">

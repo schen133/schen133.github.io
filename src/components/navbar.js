@@ -81,7 +81,7 @@ const NavBar = () => {
             </span>
           </a>
         </li>{" "}
-        <li>
+        {/* <li>
           <a className="group flex items-center py-3">
             <span className="nav-indicator mr-4 h-px w-8 bg-lighttext transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
               {" "}
@@ -91,7 +91,7 @@ const NavBar = () => {
               Open source
             </span>
           </a>
-        </li>{" "}
+        </li>{" "} */}
       </ul>
     </nav>
   );

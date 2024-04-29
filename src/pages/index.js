@@ -47,7 +47,7 @@ export default function Home() {
         className="bg-bg dark:bg-dbg relative flex font-sans h-full w-full justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 transition"
       >
         <div
-          className={on ? "fixed inset-0 z-0" : "hidden"}
+          className={on ? "fixed transition duration-300 inset-0 z-0" : "hidden"}
           style={{
             // background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
             background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgb(18, 100, 18, 0.15), transparent 80%)`,

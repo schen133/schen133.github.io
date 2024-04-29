@@ -77,7 +77,7 @@ const NavBar = () => {
                   : "text-lighttext dark:text-dlighttext"
               )}
             >
-              Projects
+              Selected work
             </span>
           </a>
         </li>{" "}

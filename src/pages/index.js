@@ -1,13 +1,9 @@
 import Header from "@/components/leftside";
 import Content from "@/components/rightside";
 import Head from "next/head";
-import Image from "next/image";
 import classNames from "classnames";
-import { calcLength, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
-// import Projects from "@/components/Projects";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [on, setOn] = useState(true);
@@ -47,9 +43,8 @@ export default function Home() {
         className="bg-bg dark:bg-dbg relative flex font-sans h-full w-full justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 transition"
       >
         <div
-          className={on ? "fixed transition duration-300 inset-0 z-0" : "hidden"}
+          className={on ? "fixed transition duration-300 inset-0" : "hidden"}
           style={{
-            // background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
             background: `radial-gradient(500px at ${mousePosition.x}px ${mousePosition.y}px, rgb(18, 100, 18, 0.15), transparent 80%)`,
           }}
         ></div>{" "}
@@ -59,7 +54,6 @@ export default function Home() {
             "z-40 fixed  top-[15px] right-[15px] lg:right-[60px] lg:top-[50px] w-[60px] h-[30px] rounded-[50px] cursor-pointer  transition",
             on ? "bg-bg/40 " : "bg-dbg/40"
           )}
-          //  data-isOn={isOn} onClick={toggleSwitch}
           onClick={() => setOn(!on)}
         >
           <div
@@ -127,7 +121,7 @@ export default function Home() {
         </div>{" "}
         <div
           id="indexContainer"
-          className="flex dark:text-white flex-col lg:flex-row h-full w-full max-w-[1088px] lg:gap-2 lg:justify-between"
+          className="z-40 flex dark:text-white flex-col lg:flex-row h-full w-full max-w-[1088px] lg:gap-2 lg:justify-between"
         >
           <Header />
           <Content />

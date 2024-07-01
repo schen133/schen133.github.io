@@ -33,13 +33,13 @@ const Projects = () => {
       picture: "/img/revi_new_design.png",
       url: "https://infoscout.ai/industry/supplychain",
     },
-    {
-      projectName: "Social Media Web App",
-      description:
-        "A scalable full stack web application built with Meteor.js and MongoDB. This production ready web app offers a comprehensive solution for researchers, enabling them not only to host experiments and batches with participants with ease but also helps them efficiently to gather and manage data.",
-      picture: "/img/HCI.png",
-      url: "",
-    },
+    // {
+    //   projectName: "Social Media Web App",
+    //   description:
+    //     "A scalable full stack web application built with Meteor.js and MongoDB. This production ready web app offers a comprehensive solution for researchers, enabling them not only to host experiments and batches with participants with ease but also helps them efficiently to gather and manage data.",
+    //   picture: "/img/HCI.png",
+    //   url: "",
+    // },
     {
       projectName: "Personalized Meal Plan Generation",
       description:

@@ -8,6 +8,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {},
     extend: {
       colors: {
         bg: "#FBFBEA",

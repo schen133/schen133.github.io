@@ -32,7 +32,7 @@ const Header = () => {
     >
       <div id="textContainer">
         <h1 className="text-4xl sm:text-5xl font-bold text-darktext dark:text-ddarktext ">
-          <span className=""> Hi,</span> I'm Chris (Sifeng) 
+          <span className=""> Hi,</span> I'm Chris (Sifeng)
         </h1>
 
         <h2 className="mt-3 text-lg sm:text-xl font-medium text-darktext dark:text-ddarktext">

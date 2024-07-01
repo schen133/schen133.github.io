@@ -31,7 +31,7 @@ const Experience = () => {
       ],
       time: {
         from: "March 2023",
-        to: "Present",
+        to: "May 2024",
       },
       skills: [
         "React",
@@ -54,13 +54,12 @@ const Experience = () => {
         // "Implemented various API services such as AWS S3, CloudFront, Auth0, and Stripe to enhance user experience.",
         // "Adopted the Bulletproof React software architecture for a scalable and production-ready NextJS application.",
         // "Researched websites of industry-standard companies and collaborated with team members for design concepts.",
-        "Leading frontend development of company's primary software.",
-        "Designing, developing, shipping websites, features, and prototypes to investors and clients.",
-        "Designing frontend application's architecture and optimizing performance ensuring a maintainable and scalable codebase.",
+        "Leading front-end development for the website and primary CRM software at Revi. Design, build, and deliver high-quality websites and user interfaces.",
+        "Advocate and set up standards and best practices for front-end development ensuring codebase maintainability and UI components reusability. By adopting React bulletproof architecture, and SOLID principles which resulted in reducing any new feature's development time by 30% on average.",
       ],
       time: {
         from: "May 2023",
-        to: "Present",
+        to: "May 2024",
       },
       skills: [
         "React",

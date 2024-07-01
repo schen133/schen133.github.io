@@ -13,7 +13,6 @@ const Content = () => {
       >
         <About />
         <Experience />
-
         <Projects />
 
         {/* <OpenSource /> */}

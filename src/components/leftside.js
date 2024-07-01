@@ -12,7 +12,7 @@ const Header = () => {
         "I love music 🎉 🎵",
         "I love coffee and matcha 🍵",
         "I also love to work out 🏋🏻‍♂️",
-        "I am a developer/engineer",
+        "Thanks for visiting my personal website. Enjoy!",
         // "CS @ University of Rochester 👨🏻‍💻",
       ],
       typeSpeed: 40,

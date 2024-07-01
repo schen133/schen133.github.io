@@ -64,6 +64,7 @@ const Experience = () => {
       skills: [
         "React",
         "NextJS",
+        "Django",
         "JavaSript",
         "TailwindCSS",
         "Framer Motion",

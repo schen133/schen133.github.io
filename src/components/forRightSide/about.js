@@ -54,16 +54,21 @@ const About = () => {
             <span className="text-accent font-semibold">
               a research lab, a student-led software consultancy, and a start-up
             </span>{" "}
-            that's in the top 10% of applicants in YCombinator. I am also a
-            freelancer part-time and I build websites for small business owners.
-            Through these experiences, I've gain valuable experiences in
-            different software development tools, practices, and methodologies.
+            that's in the top 10% of applicants in YCombinator. What I've been
+            focusing on and working on lately is mainly designing and developing
+            user interfaces as well as ensuring their performance in the
+            technical aspect in order to bring out the best user experience.
           </p>
         </TextReveal2>
         <TextReveal4>
           {" "}
-          I am currently looking for new opportunities. Whether you have any
-          question or would like to reach out to me, please do so!
+          {/* I am currently looking for new opportunities. Whether you have any
+          question or would like to reach out to me, please do so! */}
+          In my free time, I like learning about what's really under the hood of
+          different front-end/JavaScript frameworks. I plan on creating a
+          mini-component library just for the funsies and hope to encounter and
+          solve the problems engineers face when creating the most popular
+          frameworks that we use nowadays like React, Vue, etc.
         </TextReveal4>
       </div>
     </section>

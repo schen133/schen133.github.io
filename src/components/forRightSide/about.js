@@ -35,9 +35,8 @@ const About = () => {
           <p className="mb-4">
             {" "}
             Welcome to my personal page! My name is Sifeng or you can just call
-            me Chris. I am a graduating Computer Science student at the
-            University of Rochester and a sofware engineer who specialize in
-            building scalable
+            me Chris. I am a sofware engineer who specialize in building
+            scalable
             <span className="text-accent font-semibold">
               {" "}
               Web Applications
@@ -52,7 +51,29 @@ const About = () => {
           <p className="mb-4">
             So far, I've had the chance to work at{" "}
             <span className="text-accent font-semibold">
-              a research lab, a student-led software consultancy, and a start-up
+              <a
+                className="underline"
+                href="https://dorahacks.io/"
+                target="_blank"
+              >
+                a global hackathon organizer platform
+              </a>
+              ,{" "}
+              <a
+                className="underline"
+                href="https://roc-hci.com/"
+                target="_blank"
+              >
+                a research institute
+              </a>
+              , and {" "}
+              <a
+                className="underline"
+                href="https://infoscout.ai/"
+                target="_blank"
+              >
+                a start-up
+              </a>
             </span>{" "}
             that's in the top 10% of applicants in YCombinator. What I've been
             focusing on and working on lately is mainly designing and developing

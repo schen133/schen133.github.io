@@ -1,19 +1,18 @@
 // import Typical from "react-typical";
-import Typed from "typed.js";
-import { useState, useRef, useEffect } from "react";
-import NavBar from "./navbar";
+import Typed from "typed.js"
+import { useState, useRef, useEffect } from "react"
+import NavBar from "./navbar"
 
 const Header = () => {
-  const el = useRef(null);
+  const el = useRef(null)
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "I am a developer/engineer",
-        "I love music 🎉 🎵",
+        "I love trying different cuisinies 🍜",
         "I love coffee and matcha 🍵",
-        "I also love to work out 🏋🏻‍♂️",
-        "Thanks for visiting my personal website. Enjoy!",
-        // "CS @ University of Rochester 👨🏻‍💻",
+        "I enjoy playing video games 🎮",
+        "I also enjoy going on runs 🏃",
+        "Thanks for stopping by!",
       ],
       typeSpeed: 40,
       backSpeed: 30,
@@ -22,8 +21,8 @@ const Header = () => {
       loopCount: 0,
       showCursor: false,
       cursorChar: "|",
-    });
-  }, []);
+    })
+  }, [])
 
   return (
     <div
@@ -36,7 +35,7 @@ const Header = () => {
         </h1>
 
         <h2 className="mt-3 text-lg sm:text-xl font-medium text-darktext dark:text-ddarktext">
-          Software Engineer
+          Software Engineer / Developer
         </h2>
 
         <p className="mt-4 max-w-xs leading-normal font-normal text-mediumtext dark:text-dmediumtext border- h-[40px]">
@@ -53,11 +52,7 @@ const Header = () => {
         <li>Experience</li>
         <li>Project</li> */}
         <li className="mr-5 text-xs">
-          <a
-            className="block hover:text-accent"
-            href="https://github.com/schen133"
-            target="_blank"
-          >
+          <a className="block hover:text-accent" href="https://github.com/schen133" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -90,10 +85,7 @@ const Header = () => {
         </li>
 
         <li className="mr-5 text-xs">
-          <a
-            className="block hover:text-accent"
-            href="mailto:schen133@u.rochester.edu"
-          >
+          <a className="block hover:text-accent" href="mailto:schen133@u.rochester.edu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -106,7 +98,7 @@ const Header = () => {
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

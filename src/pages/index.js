@@ -1,24 +1,24 @@
-import Header from "@/components/leftside";
-import Content from "@/components/rightside";
-import Head from "next/head";
-import classNames from "classnames";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import Header from "@/components/leftside"
+import Content from "@/components/rightside"
+import Head from "next/head"
+import classNames from "classnames"
+import { motion } from "framer-motion"
+import { useState } from "react"
 
 export default function Home() {
-  const [on, setOn] = useState(true);
+  const [on, setOn] = useState(true)
 
   const spring = {
     type: "spring",
     stiffness: 700,
     damping: 20,
-  };
+  }
 
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    setMousePosition({ x: clientX, y: clientY });
-  };
+    const { clientX, clientY } = e
+    setMousePosition({ x: clientX, y: clientY })
+  }
 
   return (
     <div
@@ -28,10 +28,7 @@ export default function Home() {
       <Head>
         <title> Sifeng Chen</title>
         <link rel="icon" href="/letter-s-light.ico" />
-        <meta
-          name="description"
-          content="Sifeng Chen's personal website"
-        ></meta>
+        <meta name="description" content="Sifeng Chen's personal website"></meta>
         <meta
           name="keywords"
           content="Sifeng Chen, Chris Chen, Chris Sifeng Chen, University of Rochester, Software Engineer"
@@ -49,9 +46,8 @@ export default function Home() {
           }}
         ></div>{" "}
         <div
-          id="themeToggleButton"
           className={classNames(
-            "z-40 fixed  top-[15px] right-[15px] lg:right-[60px] lg:top-[50px] w-[60px] h-[30px] rounded-[50px] cursor-pointer  transition",
+            "z-50 fixed  top-[15px] right-[15px] lg:right-[60px] lg:top-[50px] w-[60px] h-[30px] rounded-[50px] cursor-pointer  transition",
             on ? "bg-bg/40 " : "bg-dbg/40"
           )}
           onClick={() => setOn(!on)}
@@ -70,10 +66,7 @@ export default function Home() {
               stroke-width="3"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className={classNames(
-                "text-dbg transition",
-                on ? "opacity-1" : "opacity-0"
-              )}
+              className={classNames("text-dbg transition", on ? "opacity-1" : "opacity-0")}
             >
               <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
             </svg>
@@ -87,10 +80,7 @@ export default function Home() {
               stroke-width="3"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className={classNames(
-                "text-bg transition",
-                on ? "opacity-0" : "opacity-1"
-              )}
+              className={classNames("text-bg transition", on ? "opacity-0" : "opacity-1")}
             >
               <circle cx="12" cy="12" r="4" />
               <path d="M12 2v2" />
@@ -128,5 +118,5 @@ export default function Home() {
         </div>
       </main>
     </div>
-  );
+  )
 }

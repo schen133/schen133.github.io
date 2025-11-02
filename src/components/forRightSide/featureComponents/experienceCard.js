@@ -1,5 +1,5 @@
-import TextReveal from "../animationComponents/TextReveal";
-import { TextReveal2, TextReveal3 } from "../animationComponents/TextReveal";
+import TextReveal from "../animationComponents/TextReveal"
+import { TextReveal2, TextReveal3 } from "../animationComponents/TextReveal"
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -19,16 +19,9 @@ const ExperienceCard = ({ experience }) => {
             {experience.time.from} — {experience.time.to}
           </TextReveal>
         </div>
-        <div
-          id="moreInfor"
-          className="flex flex-col mt-2 sm:mt-[-2px] border- z-10"
-        >
+        <div id="moreInfor" className="flex flex-col mt-2 sm:mt-[-2px] border- z-10">
           <div id="titleAndCompany" className="flex flex-col font-medium ">
-            <a
-              className="group/link flex flex-row"
-              href={experience.url}
-              target="_blank"
-            >
+            <a className="group/link flex flex-row" href={experience.url} target="_blank">
               <span
                 id="linkSpan"
                 className="absolute border- -inset-x-4 -inset-y-4 hidden rounded md:-inset-x-6 lg:-inset-x-6 md:block"
@@ -58,9 +51,7 @@ const ExperienceCard = ({ experience }) => {
             </a>
             <TextReveal>
               {" "}
-              <h3 className="text-mediumtext dark:text-dmediumtext">
-                {experience.role}{" "}
-              </h3>
+              <h3 className="text-mediumtext dark:text-dmediumtext">{experience.role} </h3>
             </TextReveal>
           </div>
 
@@ -94,7 +85,7 @@ const ExperienceCard = ({ experience }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ExperienceCard;
+export default ExperienceCard

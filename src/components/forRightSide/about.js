@@ -6,7 +6,9 @@ import { motion, useInView } from "framer-motion"
 
 const About = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { margin: "-50% 0px -50% 0px" })
+  // const isInView = useInView(ref, { margin: "-50% 0px -50% 0px" })
+  const isInView = useInView(ref, { margin: "-30% 0px -70% 0px" })
+
   const setInViewFeature = useFeatureStore((state) => state.setInViewFeature)
 
   useEffect(() => {

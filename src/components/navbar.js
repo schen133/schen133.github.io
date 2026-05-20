@@ -1,9 +1,9 @@
-import Link from "next/link";
-import useFeatureStore from "@/utils/useFeatureStore";
-import classNames from "classnames";
+import Link from "next/link"
+import useFeatureStore from "@/utils/useFeatureStore"
+import classNames from "classnames"
 
 const NavBar = () => {
-  const inViewFeature = useFeatureStore((state) => state.inViewFeature);
+  const inViewFeature = useFeatureStore((state) => state.inViewFeature)
 
   return (
     <nav className="hidden lg:block">
@@ -13,9 +13,7 @@ const NavBar = () => {
             <span
               className={classNames(
                 "nav-indicator mr-4  transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none",
-                inViewFeature == "about"
-                  ? "w-16 bg-accent h-[2px]"
-                  : "bg-lighttext w-8 h-[1px]"
+                inViewFeature == "about" ? "w-16 bg-accent h-[2px]" : "bg-lighttext w-8 h-[1px]",
               )}
             >
               {/* <span className="nav-indicator mr-4 h-px w-8 bg-lighttext transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"> */}
@@ -23,9 +21,7 @@ const NavBar = () => {
             <span
               className={classNames(
                 "text-xs font-bold uppercase tracking-widest group-hover:text-accent group-focus-visible:text-slate-200",
-                inViewFeature == "about"
-                  ? "text-accent"
-                  : "text-lighttext dark:text-dlighttext"
+                inViewFeature == "about" ? "text-accent" : "text-lighttext dark:text-dlighttext",
               )}
             >
               {" "}
@@ -40,7 +36,7 @@ const NavBar = () => {
                 "nav-indicator mr-4 transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none",
                 inViewFeature == "experience"
                   ? "w-16 bg-accent h-[2px]"
-                  : "bg-lighttext w-8 h-[1px]"
+                  : "bg-lighttext w-8 h-[1px]",
               )}
             >
               {/* <span className="nav-indicator mr-4 h-px w-8 bg-lighttext transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"> */}
@@ -50,37 +46,31 @@ const NavBar = () => {
                 "text-xs font-bold uppercase tracking-widest group-hover:text-accent group-focus-visible:text-slate-200",
                 inViewFeature == "experience"
                   ? "text-accent"
-                  : "text-lighttext dark:text-dlighttext"
+                  : "text-lighttext dark:text-dlighttext",
               )}
             >
               Experience
             </span>
           </a>
         </li>{" "}
-        <li>
+        {/* <li>
           <a className="group flex items-center py-3" href="#projects">
             <span
               className={classNames(
                 "nav-indicator mr-4 transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none",
-                inViewFeature == "projects"
-                  ? "w-16 bg-accent h-[2px]"
-                  : "bg-lighttext w-8 h-[1px]"
+                inViewFeature == "projects" ? "w-16 bg-accent h-[2px]" : "bg-lighttext w-8 h-[1px]",
               )}
-            >
-              {/* <span className="nav-indicator mr-4 h-px w-8 bg-lighttext transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"> */}
-            </span>
+            ></span>
             <span
               className={classNames(
                 "text-xs font-bold uppercase tracking-widest group-hover:text-accent group-focus-visible:text-slate-200",
-                inViewFeature == "projects"
-                  ? "text-accent"
-                  : "text-lighttext dark:text-dlighttext"
+                inViewFeature == "projects" ? "text-accent" : "text-lighttext dark:text-dlighttext",
               )}
             >
               Selected work
             </span>
           </a>
-        </li>{" "}
+        </li> */}
         {/* <li>
           <a className="group flex items-center py-3">
             <span className="nav-indicator mr-4 h-px w-8 bg-lighttext transition-all group-hover:w-16 group-hover:bg-accent group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
@@ -94,7 +84,7 @@ const NavBar = () => {
         </li>{" "} */}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

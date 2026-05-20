@@ -35,7 +35,7 @@ const Header = () => {
         </h1>
 
         <h2 className="mt-3 text-lg sm:text-xl font-medium text-darktext dark:text-ddarktext">
-          Software Engineer / Developer
+          Software Engineer
         </h2>
 
         <p className="mt-4 max-w-xs leading-normal font-normal text-mediumtext dark:text-dmediumtext border- h-[40px]">
@@ -85,7 +85,7 @@ const Header = () => {
         </li>
 
         <li className="mr-5 text-xs">
-          <a className="block hover:text-accent" href="mailto:schen133@u.rochester.edu">
+          <a className="block hover:text-accent" href="mailto:sifengchen133.dev@gmail.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

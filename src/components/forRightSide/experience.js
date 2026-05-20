@@ -5,7 +5,9 @@ import useFeatureStore from "@/utils/useFeatureStore"
 
 const Experience = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { margin: "-50% 0px -50% 0px" })
+  // const isInView = useInView(ref, { margin: "-50% 0px -50% 0px" })
+  const isInView = useInView(ref, { margin: "-30% 0px -70% 0px" })
+
   const setInViewFeature = useFeatureStore((state) => state.setInViewFeature)
 
   useEffect(() => {
@@ -118,7 +120,7 @@ const Experience = () => {
         ))}
       </div>
 
-      <div className="mt-12">
+      {/* <div className="mt-12">
         {" "}
         <a
           className="group flex flex-row font-medium text-darktext dark:text-ddarktext "
@@ -142,7 +144,7 @@ const Experience = () => {
             </svg>
           </span>
         </a>
-      </div>
+      </div> */}
     </section>
   )
 }
